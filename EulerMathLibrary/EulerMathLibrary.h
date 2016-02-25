@@ -17,7 +17,8 @@ namespace EulerMath
 	class HelperFunctions
 	{
 	public:
-		//static EULERMATHLIBRARY_API bool isPrime(long number);
+		static EULERMATHLIBRARY_API bool isPrime(long number);
+		static EULERMATHLIBRARY_API bool isPerfectSquare(long number);
 		static EULERMATHLIBRARY_API int Test(int input);
 		static EULERMATHLIBRARY_API std::string TestString(std::string input);
 	};
