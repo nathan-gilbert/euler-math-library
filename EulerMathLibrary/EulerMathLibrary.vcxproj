@@ -22,7 +22,7 @@
     <ProjectGuid>{58D8F232-A57B-43B4-9FA4-9934AF4FD433}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>EulerMathLibrary</RootNamespace>
-    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0.10586.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
