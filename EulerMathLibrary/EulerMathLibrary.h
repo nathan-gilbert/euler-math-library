@@ -3,13 +3,16 @@
 //
 // http://www.cplusplus.com/forum/general/1125/
 // https://msdn.microsoft.com/en-us/library/ms235636.aspx
+//
+#ifndef __linux
 #ifdef EULERMATHLIBRARY_EXPORTS
 #define EULERMATHLIBRARY_API __declspec(dllexport)
 #else
 #define EULERMATHLIBRARY_API __declspec(dllimport)
-#endif
-
-#include <string>
+#endif //ifdef
+#else
+#define EULERMATHLIBRARY_API
+#endif //ifndef
 
 namespace EulerMath
 {
