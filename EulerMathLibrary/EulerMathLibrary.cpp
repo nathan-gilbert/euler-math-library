@@ -13,7 +13,9 @@ EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isPrime(long number)
 //
 EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isMillerRabinPrime(long n)
 {
-	return false;
+    if (n == 2)
+        return true;
+    return false;
 }
 
 EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isPerfectSquare(long number)

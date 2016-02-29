@@ -16,12 +16,12 @@
 
 namespace EulerMath
 {
-	// This class is exported from the EulerMathLibrary.dll
-	class HelperFunctions
-	{
-	public:
-		static EULERMATHLIBRARY_API bool isPerfectSquare(long number);
-		static EULERMATHLIBRARY_API bool isPrime(long number);
-		static EULERMATHLIBRARY_API bool isMillerRabinPrime(long n);
-	};
+    // This class is exported from the EulerMathLibrary.dll
+    class HelperFunctions
+    {
+        public:
+            static EULERMATHLIBRARY_API bool isPerfectSquare(long number);
+            static EULERMATHLIBRARY_API bool isPrime(long number);
+            static EULERMATHLIBRARY_API bool isMillerRabinPrime(long n);
+    };
 }
