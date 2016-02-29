@@ -5,11 +5,15 @@
 
 #pragma once
 
+//windows specific headers
+#ifndef __linux
 #include "targetver.h"
 
 #define WIN32_LEAN_AND_MEAN             // Exclude rarely-used stuff from Windows headers
 // Windows Header Files:
 #include <windows.h>
-#include <math.h>
+#endif //ifndef __linux
 
+//c++ and project headers
+#include <math.h>
 #include "EulerMathLibrary.h"
