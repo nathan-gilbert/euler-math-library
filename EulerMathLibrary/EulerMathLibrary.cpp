@@ -1,6 +1,14 @@
 #include "stdafx.h"
+#include "MathUtils.h"
 
 EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isPrime(long number)
+{
+	return false;
+}
+
+//http://www.sanfoundry.com/cpp-program-implement-miller-rabin-primality-test/
+//
+EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isMillerRabinPrime(long n)
 {
 	return false;
 }
