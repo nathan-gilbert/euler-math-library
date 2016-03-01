@@ -2,9 +2,9 @@
 
 class MathUtils
 {
-public:
-	MathUtils();
-	~MathUtils();
+    public:
+        MathUtils();
+        ~MathUtils();
 
-	static long Modulo();
+        static long Modulo();
 };
