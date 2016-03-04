@@ -12,3 +12,5 @@ EulerMathLibrary.a: EulerMathLibrary.o
 EulerMathLibrary.o: EulerMathLibrary.cpp EulerMathLibrary.h
 	$(CC) $(CDEBUG_FLAGS) -c -o EulerMathLibrary.o EulerMathLibrary.cpp
 
+clean:
+	rm *.a *.o
