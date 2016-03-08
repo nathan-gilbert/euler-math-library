@@ -15,4 +15,11 @@
 //c++ and project headers
 #include <math.h>
 #include <stdlib.h>
+
+#ifdef __linux
+//for the __int64 data type
+#include <inttypes.h>
+typedef int64_t __int64;
+#endif
+
 #include "EulerMathLibrary.h"
