@@ -14,4 +14,5 @@
 
 //c++ and project headers
 #include <math.h>
+#include <stdlib.h>
 #include "EulerMathLibrary.h"
