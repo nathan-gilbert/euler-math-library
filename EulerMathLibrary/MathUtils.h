@@ -1,5 +1,10 @@
 #pragma once
 
+#ifdef __linux
+#include <inttypes.h>
+typedef int64_t __int64;
+#endif
+
 class MathUtils
 {
 public:

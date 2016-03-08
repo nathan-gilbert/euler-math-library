@@ -10,20 +10,18 @@ EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isPrime(__int64 number)
 //
 EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isMillerRabinPrime(__int64 p, int iteration)
 {
+    //negative numbers and 0,1
     if (p < 2)
-    {
 	return false;
-    }
+
+    //divisible by 2?
     if (p != 2 && p % 2 == 0)
-    {
 	return false;
-    }
 
     __int64 s = p - 1;
     while (s % 2 == 0)
-    {
 	s /= 2;
-    }
+
     for (int i = 0; i < iteration; i++)
     {
 	__int64 a = rand() % (p - 1) + 1, temp = s;
@@ -33,11 +31,11 @@ EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isMillerRabinPrime(__int64
 	    mod = MathUtils::MulMod(mod, mod, p);
 	    temp *= 2;
 	}
+
 	if (mod != p - 1 && temp % 2 == 0)
-	{
 	    return false;
-	}
     }
+
     return true;
 }
 
@@ -53,5 +51,6 @@ EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isPerfectSquare(__int64 nu
 	int t = (int)floor(sqrt((double)number) + 0.5);
 	return (t*t == number);
     }
+
     return false;
 }
