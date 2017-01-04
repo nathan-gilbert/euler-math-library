@@ -39,6 +39,30 @@ EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isMillerRabinPrime(__int64
     return true;
 }
 
+EULERMATHLIBRARY_API __int64 EulerMath::HelperFunctions::divisorCount(__int64 n)
+{
+    __int64 limit = n;
+    __int64 numberOfDivisors = 0;
+
+    if (n == 1)
+        return 1;
+
+    for (__int64 i = 1; i < limit; ++i) 
+    {
+        if (n % i == 0) 
+        {
+            limit = n / i;
+            if (limit != i) 
+            {
+                numberOfDivisors++;
+            }
+            numberOfDivisors++;
+        }
+    }
+
+    return numberOfDivisors;
+}
+
 EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isPerfectSquare(__int64 number)
 {
     int h = number & 0xF;  // h is the last hex "digit"

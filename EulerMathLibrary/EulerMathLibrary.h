@@ -23,5 +23,6 @@ namespace EulerMath
 	static EULERMATHLIBRARY_API bool isPerfectSquare(__int64 number);
 	static EULERMATHLIBRARY_API bool isPrime(__int64 number);
 	static EULERMATHLIBRARY_API bool isMillerRabinPrime(__int64 n, int iteration);
+	static EULERMATHLIBRARY_API __int64 divisorCount(__int64 n);
     };
 }
