@@ -212,3 +212,5 @@ _Pvt_Extensions/
 ModelManifest.xml
 /EulerMathLibrary.VC.db
 *.opendb
+*.a
+*.o
