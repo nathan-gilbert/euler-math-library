@@ -1,6 +1,6 @@
 #pragma once
 
-#ifdef __linux
+#ifndef _WIN64
 #include <inttypes.h>
 typedef int64_t __int64;
 #endif

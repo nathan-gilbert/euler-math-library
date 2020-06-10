@@ -4,15 +4,21 @@
 // http://www.cplusplus.com/forum/general/1125/
 // https://msdn.microsoft.com/en-us/library/ms235636.aspx
 //
+#ifndef __APPLE__
 #ifndef __linux
 #ifdef EULERMATHLIBRARY_EXPORTS
 #define EULERMATHLIBRARY_API __declspec(dllexport)
 #else
 #define EULERMATHLIBRARY_API __declspec(dllimport)
-#endif //ifdef
+#endif //windows ifdef
 #else
 #define EULERMATHLIBRARY_API
-#endif //ifndef
+#endif //linux ifndef
+#else
+#define EULERMATHLIBRARY_API
+#endif //apple ifndef
+
+#include "MathUtils.h"
 
 namespace EulerMath
 {

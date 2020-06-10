@@ -1,5 +1,10 @@
+#ifdef _WIN64
 #include "stdafx.h"
+#endif
+#include "EulerMathLibrary.h"
 #include "MathUtils.h"
+#include <cmath>
+#include <cstdlib>
 
 EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isPrime(__int64 number)
 {
