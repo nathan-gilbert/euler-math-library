@@ -12,7 +12,6 @@ EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isPrime(__int64 number)
 }
 
 //http://www.sanfoundry.com/cpp-program-implement-miller-rabin-primality-test/
-//
 EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isMillerRabinPrime(__int64 p, int iteration)
 {
     //negative numbers and 0,1
@@ -40,7 +39,6 @@ EULERMATHLIBRARY_API bool EulerMath::HelperFunctions::isMillerRabinPrime(__int64
         if (mod != p - 1 && temp % 2 == 0)
             return false;
     }
-
     return true;
 }
 
