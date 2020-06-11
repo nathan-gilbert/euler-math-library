@@ -215,3 +215,4 @@ ModelManifest.xml
 *.a
 *.o
 .idea
+cmake-build-debug
