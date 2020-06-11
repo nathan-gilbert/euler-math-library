@@ -214,3 +214,4 @@ ModelManifest.xml
 *.opendb
 *.a
 *.o
+.idea
